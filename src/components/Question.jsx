@@ -40,17 +40,14 @@ function Question({data, formData}){
             return;
         }
         setAnswered(1)
-        console.log(selectedAnswer);
     }
     const handleReloadPAge = () => {
         window.location.reload()
     }
 
     const validateAnswerForm = () => {
-        console.log(allOptions)
         if (selectedAnswer.trim() === '') {
             setError('Please select an answer');
-            console.log(error)
             return false;
         }
         setError('');

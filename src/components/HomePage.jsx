@@ -5,7 +5,6 @@ import Question from './Question';
 function HomePage(){
 
     const [questions, setQuestions] = useState([]);
-    const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
 
     const [categoryList, setCategoryLists] = useState([]);
@@ -56,7 +55,6 @@ function HomePage(){
 
         //Check if there is empty fields
         if(emptyFields.length > 0){
-            console.log(formData)
             setError('Oops! All fields are required!');
             return false;
         }
@@ -78,15 +76,12 @@ function HomePage(){
                 throw new Error('Failed to fetch questions');
             }
             const data = await response.json();
-            console.log(data);
             if(data){
                 setQuestions(data.results);
-                setLoading(false);
             }
            
         } catch (e) {
             setError(e);
-            console.log(e);
         }
     }
 
