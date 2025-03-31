@@ -1,0 +1,115 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+.container{
+   width: 400px;
+}
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 1em #00000022; 
+  padding: 2em;
+}
+label {
+  /* font-size: 1.2em; */
+  font-weight: 500;
+  margin-right: 1em;
+  cursor: pointer;
+}
+input[type="text"] {
+  padding: 0.6em ;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  font-family: inherit;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+input[type="radio"] {
+  cursor: pointer;
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+}
+select {
+  padding: 0.6em 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  font-family: inherit;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.btn{
+  background-color: #646cff;
+  color: white;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.btn:hover {
+  border-color: #646cff;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.w-100 {
+  width: 100%;
+}
+.error{
+  color: red;
+  margin-top: 0.5em;
+}
+.text-danger{
+  color: red;
+}
+.text-success{
+  color: green;
+}
+.text-muted{
+  color: #3f3d3d;
+}
